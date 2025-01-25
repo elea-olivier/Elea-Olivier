@@ -3,29 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Eléa</title>
+    <title>Portfolio - Eléa</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Eléa Olivier</h1>
-        <p>Portfolio | Research | Teaching</p>
+        <div class="header-content">
+            <h1>Eléa Olivier</h1>
+            <p>Researcher | Teacher | Artist</p>
+            <a href="#about" class="btn">Discover My Work</a>
+        </div>
     </header>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="research.html">Research</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="contact.html">Contact</a>
+        <a href="#about">About Me</a>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-    <div class="container">
-        <section class="section">
-            <h2>About Me</h2>
-            <p>Welcome to my portfolio! I am Eléa Olivier, a dedicated researcher specializing in epidemiology and public health. I am passionate about exploring data to uncover meaningful insights that improve lives.</p>
-        </section>
-    </div>
+    <section id="about" class="container section">
+        <h2>About Me</h2>
+        <p>Welcome! I’m Eléa, a passionate researcher and teacher, striving to make complex concepts accessible to everyone. Dive into my portfolio to explore my projects and interests.</p>
+    </section>
+
+    <section id="research" class="container section">
+        <h2>Research</h2>
+        <p>Learn more about my ongoing research in epidemiology, including publications and innovative methodologies.</p>
+        <a href="research.html" class="btn">Explore Research</a>
+    </section>
+
+    <section id="teaching" class="container section">
+        <h2>Teaching</h2>
+        <p>Discover my teaching philosophy and resources for students.</p>
+        <a href="teaching.html" class="btn">Learn More</a>
+    </section>
 
     <footer>
         <p>© 2025 Eléa Olivier | All Rights Reserved</p>
