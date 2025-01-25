@@ -124,6 +124,8 @@ footer {
     margin-top: 2rem;
 }
 
+
+/* -----------Page About me ----------- */
 /* Encadré des informations de contact */
 .contact-info {
     background-color: #f1f1f1;
@@ -152,4 +154,52 @@ footer {
 .contact-info li {
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
+}
+
+
+/* -----------Page RECHERCHE ----------- */
+
+
+#research-projects, #skills, #causal-inference {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.project-item, .skill-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3, .skill-item h3 {
+    color: #333;
+}
+
+.project-item p, .skill-item p {
+    color: #555;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
 }
