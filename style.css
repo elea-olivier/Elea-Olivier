@@ -51,12 +51,23 @@ body {
     color: #fff;
 }
 
+
+/* Image de profil */
+.profile-pic {
+    width: 150px; /* Ajuste la taille en fonction de la taille que tu souhaites */
+    height: 150px; /* La même hauteur pour garder l'image carrée */
+    overflow: hidden; /* Empêche l'image de déborder du cadre */
+    border-radius: 50%; /* Crée un cercle autour de l'image */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .profile-pic img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 3px solid #fff;
-    margin-bottom: 1rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Couvre entièrement le cercle tout en conservant les proportions */
 }
 
 /* Navigation */
