@@ -11,7 +11,7 @@ body {
 /* Hero Header */
 .hero {
     height: 100vh;
-    background: url('background-artistic-medicine.jpg') no-repeat center center/cover;
+    background: url('images/drugs_background.jpg') no-repeat center center/cover;
     position: relative;
     color: #fff;
 }
@@ -122,4 +122,34 @@ footer {
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
+}
+
+/* Encadré des informations de contact */
+.contact-info {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    border: 2px solid #6a11cb;
+    border-radius: 8px;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-info h4 {
+    font-size: 1.5rem;
+    color: #6a11cb;
+    margin-bottom: 1rem;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
 }

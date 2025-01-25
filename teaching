@@ -8,28 +8,13 @@
 </head>
 <body>
     <header>
-        <!-- Photo de fond avec texte en superposition -->
-        <div class="hero">
-            <div class="overlay">
-                <div class="intro">
-                    <div class="profile-pic">
-                        <img src="images/photo_elea_.jpg" alt="Eléa Olivier">
-                    </div>
-                    <h1>Eléa Olivier</h1>
-                    <p class="tagline">Chercheuse • Artiste qui se cherche • Sportive</p>
-                    <a href="www.linkedin.com/in/eléa-olivier-411973203" target="_blank" class="btn">LinkedIn</a>
-                </div>
-            </div>
-        </div>
+        <h1>Enseignement</h1>
     </header>
 
     <nav>
-        <!-- Lien vers différentes pages -->
-        <a href="about.html">About</a>
-        <a href="teaching.html">Teaching</a>
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
         <a href="research.html">Recherche</a>
-        <a href="art.html">Art</a>
-        <a href="sport.html">Sport</a>
         <a href="contact.html">Contact</a>
     </nav>
 

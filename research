@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Eléa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Eléa Olivier</h1>
+        <p>Portfolio | Research | Teaching</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section class="section">
+            <h2>Research</h2>
+            <p>My research focuses on the intersection of epidemiology and biostatistics, with a particular interest in causal inference and therapeutic evaluation.</p>
+            <a href="#" class="btn">Learn More</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 Eléa Olivier | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

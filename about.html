@@ -3,41 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Eléa</title>
+    <title>Portfolio - Eléa Olivier</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <h1>Eléa Olivier</h1>
-            <p>Researcher | Teacher | Artist</p>
-            <a href="#about" class="btn">Discover My Work</a>
+        <!-- Photo de fond avec texte en superposition -->
+        <div class="hero">
+            <div class="overlay">
+                <div class="intro">
+                    <div class="profile-pic">
+                        <img src="images/photo_elea_.jpg" alt="Eléa Olivier">
+                    </div>
+                    <h1>Eléa Olivier</h1>
+                    <p class="tagline">Chercheuse • Artiste qui se cherche • Sportive</p>
+                    <a href="www.linkedin.com/in/eléa-olivier-411973203" target="_blank" class="btn">LinkedIn</a>
+                </div>
+            </div>
         </div>
     </header>
 
     <nav>
-        <a href="#about">About Me</a>
-        <a href="#research">Research</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#contact">Contact</a>
+        <!-- Lien vers différentes pages -->
+        <a href="about.html">About</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="research.html">Recherche</a>
+        <a href="art.html">Art</a>
+        <a href="sport.html">Sport</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
     <section id="about" class="container section">
-        <h2>About Me</h2>
-        <p>Welcome! I’m Eléa, a passionate researcher and teacher, striving to make complex concepts accessible to everyone. Dive into my portfolio to explore my projects and interests.</p>
+        <h2>À propos de moi</h2>
+        <p class="poem">
+            Entre science et poésie, <br>
+            Je cherche à comprendre, à créer.<br>
+            L'âme d'une chercheuse, l'esprit d'une artiste,<br>
+            Le cœur d'une sportive, jamais immobile.<br>
+        </p>
+        <p class="poem">
+            <br><br>
+            *Chercheuse, artiste, et amoureuse du mouvement.*<br><br>
+
+            Je suis Eléa, et je crois que chaque discipline, qu'elle soit scientifique, artistique ou sportive, a quelque chose à offrir à l'autre. Mon travail de chercheuse m'emmène à explorer l'évaluation des médicaments en utilisant de grandes bases de données en France 🇨🇵 et au Danemark 🇩🇰, avec un accent particulier sur l'analyse des risques liés au cancer, notamment sur les glucocorticoïdes et le risque de cancer. Mais là où les chiffres s'arrêtent, l'art prend sa place. Quand je ne suis pas plongée dans des données, je m'évade dans la peinture, où chaque couleur est une réponse à une question muette. Le sport, lui, me garde en mouvement, tant physiquement que mentalement.
+        </p>
+
+         <!-- Encadré avec les informations -->
+    <div class="contact-info">
+        <h4>Coordonnées :</h4>
+        <ul>
+            <li><strong>Nom complet :</strong> Eléa Olivier</li>
+            <li><strong>Téléphone :</strong> +33 6 xx xx xx xx</li>
+            <li><strong>Email :</strong> elea.olivier@email.com</li>
+            <li><strong>Site web :</strong> www.elea-portfolio.com</li>
+            <li><strong>Adresse :</strong> Paris, France</li>
+        </ul>
+    </div>
     </section>
 
-    <section id="research" class="container section">
-        <h2>Research</h2>
-        <p>Learn more about my ongoing research in epidemiology, including publications and innovative methodologies.</p>
-        <a href="research.html" class="btn">Explore Research</a>
+        <hr>
+
+        <h3>Ce que vous trouverez ici :</h3>
+
+        <ul class="about-list">
+            <li><strong>Recherche scientifique</strong>
+                <p>Dans cette section, je partage les projets qui me tiennent à cœur : des recherches qui explorent la santé et les traitements médicaux. Si vous aimez comprendre le pourquoi du comment derrière les chiffres et les données, c'est ici que ça se passe.</p>
+                <a href="research.html">[Lien vers la section Recherche]</a>
+            </li>
+
+            <li><strong>Art et créations</strong>
+                <p>Ici, vous découvrirez mes œuvres, des peintures qui sont autant de réponses poétiques à des questions parfois muettes. Un voyage visuel où la couleur et la forme se rencontrent.</p>
+                <a href="art.html">[Lien vers la section Art]</a>
+            </li>
+
+            <li><strong>Sport</strong>
+                <p>Le sport fait partie de mon quotidien, non seulement pour rester en forme, mais aussi pour nourrir ma créativité. En courant ou en pratiquant le kitesurf, je trouve une énergie qui m'aide à équilibrer mon travail et mes passions.</p>
+                <a href="sport.html">[Lien vers la section Sport]</a>
+            </li>
+
+            <li><strong>Enseignement et partages</strong>
+                <p>Dans cette section, vous trouverez mes engagements et mes projets pédagogiques. J'aime transmettre mes connaissances et échanger autour de la science, de l'art et du sport.</p>
+                <a href="teaching.html">[Lien vers la section Enseignement]</a>
+            </li>
+        </ul>
     </section>
 
-    <section id="teaching" class="container section">
-        <h2>Teaching</h2>
-        <p>Discover my teaching philosophy and resources for students.</p>
-        <a href="teaching.html" class="btn">Learn More</a>
-    </section>
+    
 
     <footer>
         <p>© 2025 Eléa Olivier | All Rights Reserved</p>
