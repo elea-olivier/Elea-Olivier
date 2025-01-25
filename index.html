@@ -3,21 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Eléa</title>
+    <title>Portfolio - Eléa Olivier</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Eléa Olivier</h1>
-        <p>Portfolio | Research | Teaching</p>
+        <!-- Photo de fond avec texte en superposition -->
+        <div class="hero">
+            <div class="overlay">
+                <div class="intro">
+                    <div class="profile-pic">
+                        <img src="profile.jpg" alt="Eléa Olivier">
+                    </div>
+                    <h1>Eléa Olivier</h1>
+                    <p class="tagline">Chercheuse • Artiste qui se cherche • Sportive</p>
+                    <a href="https://www.linkedin.com" target="_blank" class="btn">LinkedIn</a>
+                </div>
+            </div>
+        </div>
     </header>
 
     <nav>
-        <a href="about.html">About Me</a>
-        <a href="research.html">Research</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="contact.html">Contact</a>
+        <a href="#about">À propos</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#research">Recherche</a>
+        <a href="#art">Art</a>
+        <a href="#contact">Contact</a>
     </nav>
+
+    <section id="about" class="container section">
+        <h2>À propos de moi</h2>
+        <p class="poem">
+            Entre science et poésie, <br>
+            Je cherche à comprendre, à créer.<br>
+            L'âme d'une chercheuse, l'esprit d'une artiste,<br>
+            Le cœur d'une sportive, jamais immobile.<br>
+        </p>
+        <div class="details">
+            <ul>
+                <li><strong>Nom complet :</strong> Eléa Olivier</li>
+                <li><strong>Téléphone :</strong> +33 6 xx xx xx xx</li>
+                <li><strong>Email :</strong> elea.olivier@email.com</li>
+                <li><strong>Site web :</strong> www.elea-portfolio.com</li>
+                <li><strong>Adresse :</strong> Paris, France</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="teaching" class="container section">
+        <h2>Teaching</h2>
+        <p>Découvrez mes expériences pédagogiques et mes ressources pour les étudiants.</p>
+        <a href="teaching.html" class="btn">En savoir plus</a>
+    </section>
+
+    <section id="research" class="container section">
+        <h2>Recherche</h2>
+        <p>Explorez mes projets de recherche, mes publications et mon CV.</p>
+        <ul>
+            <li><a href="thesis-project.html">Projet de thèse</a></li>
+            <li><a href="projects.html">Autres projets</a></li>
+            <li><a href="cv.pdf" target="_blank">Télécharger mon CV</a></li>
+            <li><a href="https://github.com/eleaolivier" target="_blank">Voir mon GitHub</a></li>
+        </ul>
+    </section>
+
+    <section id="art" class="container section">
+        <h2>Art & Sport</h2>
+        <p>Entre l’art et le sport, je trouve mon équilibre. Découvrez mes projets artistiques et mes objectifs sportifs.</p>
+        <a href="gallery.html" class="btn">Voir ma galerie</a>
+        <p>Running : Objectifs 2025 - <strong>Semi-marathon :</strong> Moins de 1h40 | <strong>10 km :</strong> Moins de 45 minutes</p>
+    </section>
 
     <footer>
         <p>© 2025 Eléa Olivier | All Rights Reserved</p>
