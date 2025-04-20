@@ -8,7 +8,6 @@
 </head>
 <body>
     <header>
-        <!-- Photo de fond avec texte en superposition -->
         <div class="hero">
             <div class="overlay">
                 <div class="intro">
@@ -16,28 +15,47 @@
                         <img src="images/photo_elea_.jpg" alt="Eléa Olivier">
                     </div>
                     <h1>Eléa Olivier</h1>
-                    <p class="tagline">Chercheuse • Artiste qui se cherche • Sportive</p>
-                    <a href="www.linkedin.com/in/eléa-olivier-411973203" target="_blank" class="btn">LinkedIn</a>
+                    <p class="tagline">Researcher • Artist in search of herself • Athlete</p>
+                    <a href="https://www.linkedin.com/in/eléa-olivier-411973203" target="_blank" class="btn">LinkedIn</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <nav>
-        <!-- Lien vers différentes pages -->
-        <a href="about.html">About</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="research.html">Recherche</a>
-        <a href="art.html">Art</a>
-        <a href="sport.html">Sport</a>
-        <a href="contact.html">Contact</a>
+    <nav class="navbar">
+        <ul>
+            <li><a href="about.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="art.html">Art</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
 
     <div class="container">
-        <section class="section">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me for collaborations, questions, or discussions!</p>
-            <p>Email: <a href="mailto:elea@example.com">elea@example.com</a></p>
+        <section class="contact-box">
+            <h2>Let's Connect!</h2>
+            <p>If you’d like to discuss research, art, or simply say hello, feel free to reach out:</p>
+            <p><strong>Email:</strong> <a href="mailto:elea@example.com">elea@example.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/eléa-olivier-411973203" target="_blank">View Profile</a></p>
+
+            <hr style="margin: 30px auto; width: 60%; border: none; border-top: 1px solid #ccc;">
+
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
         </section>
     </div>
 

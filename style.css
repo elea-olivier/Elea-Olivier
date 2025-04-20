@@ -2,45 +2,62 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #fff; /* Fond blanc pour éviter la bande grise */
+    background-color: #fff;
     font-family: Arial, sans-serif;
 }
 
 /* Hero Header */
 .hero {
-    height: 100vh;
     background: url('images/drugs_background.jpg') no-repeat center center/cover;
     position: relative;
     color: #fff;
+    padding: 60px 20px 40px; /* padding haut/bas contrôlé */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .hero .overlay {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.45); /* plus léger qu’un vrai noir */
+    padding: 40px 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.profile-pic img {
+    width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
+    object-fit: cover;
 }
 
 .hero .intro h1 {
-    font-size: 3rem;
+    font-size: 2.2rem;
     margin-bottom: 0.5rem;
 }
 
 .hero .intro .tagline {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
     font-style: italic;
+    margin-bottom: 1rem;
 }
 
 .hero .intro .btn {
     background: #fff;
     color: #6a11cb;
-    padding: 0.75rem 1.5rem;
-    border-radius: 50px;
+    padding: 0.6rem 1.2rem;
+    border-radius: 30px;
     text-decoration: none;
+    font-weight: bold;
     transition: all 0.3s ease;
 }
 
@@ -50,75 +67,256 @@ body {
 }
 
 
+
+
 /* Image de profil */
 .profile-pic {
-    width: 150px; /* Ajuste la taille en fonction de la taille que tu souhaites */
-    height: 150px; /* La même hauteur pour garder l'image carrée */
-    overflow: hidden; /* Empêche l'image de déborder du cadre */
-    border-radius: 50%; /* Crée un cercle autour de l'image */
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 1rem;
 }
 
 .profile-pic img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Couvre entièrement le cercle tout en conservant les proportions */
+    object-fit: cover;
 }
 
-/* --------------------- Navigation -------------------------*/
-/* Style du bandeau */
+/* Navigation */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
-    padding: 10px 0;
-    background-color: #333; /* Fond sombre mais élégant */
-    color: #fff; /* Texte blanc pour contraste */
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère pour profondeur */
-    transition: all 0.3s ease;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Liste des liens de navigation */
 .navbar ul {
     display: flex;
     justify-content: center;
-    align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-/* Liens du menu */
 .navbar ul li {
-    margin: 0 25px; /* Espacement plus large pour plus d'aération */
+    margin: 0 20px;
 }
 
-/* Liens avec style épuré */
 .navbar ul li a {
     text-decoration: none;
-    font-size: 1.2rem;
-    font-family: 'Arial', sans-serif;
     color: #fff;
-    font-weight: 500;
-    padding: 8px 15px;
+    font-size: 1.1rem;
+    padding: 8px 14px;
     border-radius: 5px;
-    display: inline-block;
     transition: all 0.3s ease;
 }
 
-/* Effet de survol plus subtil */
 .navbar ul li a:hover {
-    background-color: #555; /* Changement de fond au survol */
-    color: #ff69b4; /* Couleur subtile mais élégante au survol */
+    background-color: #555;
+    color: #ff69b4;
 }
 
-/* Styles responsives */
+/* Sections */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.section {
+    margin-bottom: 3rem;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #6a11cb;
+    text-align: center;
+}
+
+/* Projets et compétences */
+.project-item, .skill-item {
+    background-color: #fff;
+    padding: 20px;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.project-item h3, .skill-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-item p, .skill-item p {
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Listes */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Boutons */
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Poème */
+.poem {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.7;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem 0;
+    margin-top: 3rem;
+    font-size: 1rem;
+}
+
+/* Contact */
+.contact-box {
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin: 2rem auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: center;
+}
+
+.contact-box h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Info box (page About) */
+.info-box {
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.info-box .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.text-background {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.info-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.info-box a {
+    color: #ffdd57;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.info-box a:hover {
+    text-decoration: underline;
+    color: #ff9900;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
     .navbar ul {
         flex-direction: column;
@@ -128,370 +326,24 @@ body {
         margin: 10px 0;
     }
 
-    .navbar ul li a {
-        font-size: 1.4rem;
-        padding: 12px;
-    }
-}
-
-
-/* Sections */
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    padding: 2rem 0;
-    text-align: center;
-}
-
-.section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #6a11cb;
-}
-
-.details ul {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0;
-    text-align: left;
-    display: inline-block;
-}
-
-.details li {
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
-}
-
-.poem {
-    font-style: italic;
-    color: #555;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 3rem;
-}
-
-footer p {
-    font-size: 1rem;
-}
-
-
-/* -----------Page About me ----------- */
-
-/* Container des blocs avec un fond d'image */
-.info-box {
-    background-size: cover;
-    background-position: center;
-    padding: 50px;
-    margin-bottom: 30px;
-    border-radius: 15px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-    position: relative;
-    height: 400px; /* Augmenter la hauteur pour mieux voir l'image */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-
-.info-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-}
-
-/* Overlay sombre pour améliorer la visibilité du texte */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Fond sombre semi-transparent */
-    z-index: 1;
-}
-
-/* Fond sous le texte */
-.text-background {
-    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent sombre sous le texte */
-    padding: 20px; /* Ajoute de l'espace autour du texte */
-    border-radius: 10px; /* Bords arrondis pour un effet plus doux */
-    z-index: 2;
-}
-
-/* Titre de chaque section */
-.info-box h3 {
-    font-family: 'Arial', sans-serif;
-    font-size: 2.5rem;
-    color: #fff;
-    margin-bottom: 1rem;
-    z-index: 2; /* Au-dessus de l'overlay */
-}
-
-/* Texte de chaque section */
-.info-box p {
-    font-family: 'Georgia', serif;
-    font-size: 1.2rem;
-    color: #fff;
-    margin-bottom: 1rem;
-    z-index: 2;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Ombre sur le texte pour améliorer la lisibilité */
-}
-
-/* Lien */
-.info-box a {
-    color: #ffdd57;
-    font-weight: bold;
-    font-size: 1.2rem;
-    z-index: 2;
-}
-
-.info-box a:hover {
-    text-decoration: underline;
-    color: #ff9900;
-}
-
-/* Poème */
-/* Section Poème */
-.poem-box {
-    background-color: #fff;
-    border-radius: 12px;
-    padding: 40px;
-    margin-top: 50px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.poem-box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
-}
-
-/* Titre du poème */
-.poem-box h2 {
-    font-size: 2.5rem;
-    font-family: 'Georgia', serif;
-    color: #2c3e50;
-    margin-bottom: 20px;
-    font-weight: 600;
-}
-
-/* Poème */
-.poem {
-    font-size: 1.5rem;
-    font-family: 'Georgia', serif;
-    color: #34495e;
-    line-height: 1.8;
-    text-align: center;
-    letter-spacing: 0.5px;
-    font-style: italic;
-    margin-bottom: 0;
-}
-
-/* Effet de survol sur le poème */
-.poem-box:hover .poem {
-    color: #3498db;  /* Changer de couleur au survol */
-    font-style: normal;  /* Enlever l'italique au survol */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .poem-box {
-        padding: 30px;
-        margin-top: 30px;
-    }
-
-    .poem-box h2 {
-        font-size: 2rem;
-    }
-
-    .poem {
-        font-size: 1.2rem;
-    }
-}
-
-/* Coordonnées de contact */
-
-/* Section Contact Box */
-.contact-box {
-    background-color: #f9f9f9;
-    padding: 40px 30px;
-    margin-top: 50px;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.contact-box:hover {
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
-    transform: translateY(-10px);
-}
-
-/* Header */
-.contact-box h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #333;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-}
-
-/* Form Group */
-.form-group {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.form-group label {
-    font-size: 1.2rem;
-    color: #333;
-    display: block;
-    margin-bottom: 8px;
-}
-
-.form-group input, 
-.form-group textarea {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 1rem;
-    color: #333;
-    background-color: #fff;
-    transition: border 0.3s ease, box-shadow 0.3s ease;
-}
-
-.form-group input:focus, 
-.form-group textarea:focus {
-    border: 1px solid #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-    outline: none;
-}
-
-/* Submit Button */
-.submit-btn {
-    background-color: #007bff;
-    color: white;
-    font-size: 1.1rem;
-    padding: 15px 25px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 100%;
-}
-
-.submit-btn:hover {
-    background-color: #0056b3;
-}
-
-.submit-btn:focus {
-    outline: none;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .contact-box {
-        padding: 30px 20px;
-        margin-top: 30px;
-    }
-
-    .contact-box h2 {
-        font-size: 2rem;
-    }
-
-    .form-group input, 
-    .form-group textarea {
-        padding: 12px;
-    }
-
-    .submit-btn {
-        padding: 12px 20px;
-    }
-}
-/* -----------Page RECHERCHE ----------- */
-
-
-#research-projects, #skills, #causal-inference {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
-
-.project-item, .skill-item {
-    background-color: #fff;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.project-item h3, .skill-item h3 {
-    color: #333;
-}
-
-.project-item p, .skill-item p {
-    color: #555;
-}
-
-ul {
-    margin-left: 20px;
-}
-
-ul li {
-    margin-bottom: 5px;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
     .hero .intro h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .hero .intro .tagline {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
-    .details ul {
-        text-align: center;
+    .info-box {
+        height: auto;
+        padding: 20px;
     }
 
-    .contact-info {
-        padding: 1rem;
+    .text-background {
+        padding: 10px;
     }
 
-    footer p {
-        font-size: 0.9rem;
+    .poem {
+        font-size: 1rem;
     }
 }
